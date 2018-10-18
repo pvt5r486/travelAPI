@@ -1,0 +1,365 @@
+.warp{
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+   
+}
+
+.header{
+    height: 380px;
+    background:#ffffff url(https://hexschool.github.io/JavaScript_HomeWork/assets/Hero.png) no-repeat center top;
+    background-size: cover;
+    text-align: center;
+    h1{
+        font-size: 40px;
+        color: #FFFFFF;
+        letter-spacing: 3.89px;
+        padding-top: 89px;
+    }
+    .countrySelect{
+        margin-top: 96px;
+        .countryddl{
+            width: 452px;
+            height: 48px;
+            background: rgba(255,255,255,0.70);
+            border: 3px solid #FFFFFF;
+            border-radius: 3px;
+            @include mobile480{
+                width: 80%;
+            }
+        }
+    }
+}
+
+.postion_block{
+    margin: 0px auto;
+    max-width: 900px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;   
+    border-bottom: 1px dashed #559AC8;
+    .icon{
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 24px;
+        height: 24px;
+        overflow: hidden;
+        border: 2px solid #559AC8;
+        border-radius: 50%;
+        text-align: center;
+        color: #559AC8;
+        transition: all .3s;
+        i{
+            vertical-align: middle;
+
+        }
+        &:hover{
+            color: darken(#559AC8,10%);
+            border: 2px solid darken(#559AC8,10%);
+        }
+    }
+}
+
+.hotCountry{
+    width: 88.8888%;
+    padding: 20px 26px 18px 20px;
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 5px;
+    top:-30px;
+    left:50%;
+    transform: translateX(-50%);
+    @include tablet576{
+        position:relative;
+        margin-bottom: 20px;
+        top:0px;
+        left:0%;
+        transform: translateX(0%);
+        margin: 0 auto;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .links{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        @include mobile480{
+            justify-content: space-around;
+        }
+        li{
+            margin-top: 14px;
+            margin-left: 23px;
+            @include mobile480{
+                margin-left: 0px;
+            }
+        }
+        li:nth-child(1){
+            a{
+                @include btn(#ffffff,#8A82CC,5px,130px,42px);
+            }
+        }
+        li:nth-child(2){
+            a{
+                @include btn(#ffffff,#FFA782,5px,130px,42px);
+            }
+        }
+        li:nth-child(3){
+            a{
+                @include btn(#ffffff,#F5D005,5px,130px,42px);
+            }
+        }
+        li:nth-child(4){
+            a{
+                @include btn(#ffffff,#559AC8,5px,130px,42px);
+            }
+        }
+    }
+}
+
+.content{
+    padding: 76px 40px 41px 40px;
+    .result_title{
+        font-size: 36px;
+        color: #8A82CC;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+}
+
+.result_cube{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    & > li{
+        width: 464px;
+        margin-bottom: 20px;
+        background: #FFFFFF;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+        transition: all .3s;
+        position: relative;
+        @include desktop992{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .picture{
+            height: 155px;
+            background:#ffffff url(https://hexschool.github.io/JavaScript_HomeWork/assets/Hero.png) no-repeat center center;
+            background-size: cover;
+            color: #ffffff;
+            padding:0px 24px 14px 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            @include mobile320{
+                font-size: 12px;
+            }
+            .picture_text{
+                font-size: 24px;
+                @include mobile320{
+                    font-size: 18px;
+                }
+            }
+        }
+        .info{
+            padding:15px 23px 20px 24px;
+            @include mobile320{
+                font-size: 14px;
+            }
+            li{
+                display: flex;
+                align-items: center;
+                margin-bottom: 16px;
+                img{
+                    margin-right: 9px;
+                }
+            }
+            li:nth-child(2){
+                padding-left: 1px;
+            }
+            li:nth-child(3){
+                padding-left: 3px;
+            }
+        }
+        &:hover{
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
+            transform: translateY(-5px);
+        }
+    }
+}
+
+.tags{
+    position: absolute;
+    right: 24px;
+    bottom: 19px;
+    color: #F5D005;
+    @include mobile320{
+        right: 10px;
+        bottom: 10px;
+        font-size: 12px;
+    }
+    a{
+        color:#4A4A4A;
+        transition: all .3s;
+        &:hover{
+            color: rgba(74,74,74,0.50);
+        }
+    }
+    &.notfree{
+        color: #df4554;
+    }
+}
+
+.pagerbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 49px;
+    li:first-child{
+        margin-right:22px;
+        @include mobile320{
+            margin-right:10px;
+        }
+    }
+    li:last-child{
+        margin-left:22px;
+        @include mobile320{
+            margin-left:10px;
+        }
+    }
+    a{
+        display: block;
+        padding: 5px 8px 5px 8px;
+        text-decoration: none;
+        color:  #4A4A4A;
+        transition: all .3s;
+        @include mobile320{
+            padding: 5px;
+        }
+        &:hover{
+            color: rgba(74,74,74,0.50);
+        }
+    }
+    .active{
+        color: #559AC8;
+    }
+}
+
+
+.gotop{
+    opacity: 0;
+    position: fixed;
+    right: 28px;
+    bottom: 195px;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    transition: all .3s;
+    background:#99c2de url(https://hexschool.github.io/JavaScript_HomeWork/assets/btn_goTop.png) no-repeat center center;
+    a{
+        display: block;
+        padding: 12px;
+    }
+    &.show{
+        opacity: 1;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+.footer{
+    background-color: #559AC8;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-align: center;
+    color: #ffffff;
+    h3{
+        margin-bottom: 15px;
+    }
+    .sourceLink{
+        margin-top: 15px;
+        @include color-hover-feedback(#FFD366);
+    }
+}
+
+
+.viewpoint{
+    width: 100%;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    position: relative;
+    .vp_img{
+        height: 300px;
+        background:#ffffff url(https://hexschool.github.io/JavaScript_HomeWork/assets/Hero.png) no-repeat center center;
+        background-size: cover;
+        color: #ffffff;
+        padding:0px 24px 14px 22px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: 28px;
+        span{
+            font-size: 20px;
+        }
+    }
+    .vp_info{
+        padding:15px 23px 20px 24px;
+        li{
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;    
+            i{
+                width: 16px;
+                height: auto;
+                margin-right: 10px;
+            }
+            a{
+                color:black;
+                text-decoration: none;
+                transition: all .3s;
+                &:hover{
+                    color:red;
+                }
+            }
+        }
+    }
+    .description{
+        h3{
+            padding-left:23px ;
+            padding-right: 24px;
+            font-size: 18px;
+            i{
+                width: 16px;
+                height: auto;
+                margin-right: 10px;
+            }
+        }
+        p{
+            padding:10px 25px 10px 25px;
+            letter-spacing: 1px;
+            line-height: 1.5;
+        }
+    }
+ 
+}
+
+.goback{
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+    @include color-hover-feedback(gray);
+    i{
+        margin-right: 5px;
+        color:green;
+    }
+}

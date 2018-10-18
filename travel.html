@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="高雄旅遊景點 - 串接API練習">
+    <!--越前面權重越高-->
+    <meta name="keywords" content="高雄旅遊">
+
+    <!--當我們網站連結 貼到臉書上時-->
+    <meta property="og:title" content="高雄旅遊景點 - 串接API練習">
+    <meta property="og:description" content="高雄旅遊景點 - 串接API練習">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="FB圖片連結">
+    <meta property="og:url" content="FB上的網址">
+
+    <!--小圖示-->
+    <!-- <link rel="shortcut icon " href="favicon.ico " type="image/x-icon "> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>高雄旅遊景點</title>
+</head>
+
+<body>
+    <div class="warp">
+        <header class="header">
+            <h1>高雄旅遊資訊</h1>
+            <div class="countrySelect">
+                <select name="countryddl" id="countryddl" class="countryddl">
+                    <option value="0">--請選擇行政區--</option>
+                </select>
+            </div>
+        </header>
+
+        <section class="postion_block">
+            <div class="hotCountry">
+                <span class="ribbon top-right ribbon-dangerred">
+                    <small>HOT</small>
+                </span>
+                <h2>熱門行政區</h2>
+                <ul class="links">
+                    <li><a href="#">苓雅區</a></li>
+                    <li><a href="#">三民區</a></li>
+                    <li><a href="#">新興區</a></li>
+                    <li><a href="#">左營區</a></li>
+                </ul>
+            </div>
+            <a class="icon" href="#" id="goresult"><i class="fas fa-caret-down"></i></a>
+        </section>
+
+        <div class="content">
+            <h2 class="result_title" id="result_title">三民區</h2>
+            <ul class="result_cube">
+                <li>
+                    <a href="#">
+                        <div class="picture">
+                            <h3>高雄願景館</h3>
+                            <span>三民區</span>
+                        </div>
+                    </a>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <img src="https://hexschool.github.io/JavaScript_HomeWork/assets/icons_clock.png" alt="clock_icon">                                週二至週日10:00-18:00，每週一公休
+                            </li>
+                            <li>
+                                <img src="https://hexschool.github.io/JavaScript_HomeWork/assets/icons_pin.png" alt="pin_icon">
+                                高雄市三民區建國二路318號
+                            </li>
+                            <li>
+                                <img src="https://hexschool.github.io/JavaScript_HomeWork/assets/icons_phone.png" alt="phone_icon">                                886-7-2363357
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <i class="fas fa-tag"></i>
+                        <a href="#">免費參觀</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="" data-viewpoint="">
+                        <div class="picture">
+                            <h3 class="picture_text">高雄願景館</h3>
+                            <span>三民區</span>
+                        </div>
+                    </a>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <img src="https://hexschool.github.io/JavaScript_HomeWork/assets/icons_clock.png" alt="clock_icon">                                週二至週日10:00-18:00，每週一公休
+                            </li>
+                            <li>
+                                <img src="https://hexschool.github.io/JavaScript_HomeWork/assets/icons_pin.png" alt="pin_icon">
+                                高雄市三民區建國二路318號
+                            </li>
+                            <li>
+                                <img src="https://hexschool.github.io/JavaScript_HomeWork/assets/icons_phone.png" alt="phone_icon">                                886-7-2363357
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pagerbar">
+                <li><a href="#">< prev</a></li>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">next ></a></li>
+            </ul>
+        </div>
+
+        <div class="gotop">
+            <a href="#"></a>
+        </div>
+
+        <footer class="footer">
+            <h3>高雄旅遊網</h3>
+            <a href="#" class="sourceLink">資料來源：高雄市政府</a>
+        </footer>
+    </div>
+    <!-- 自訂JS -->
+    <script src="javascript/all.js"></script>
+</body>
+
+</html>
